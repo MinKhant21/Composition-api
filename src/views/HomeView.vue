@@ -20,24 +20,11 @@ import SinglePost from './SinglePost'
 // @ is an alias to /src
 
 import { ref  } from 'vue';
-
+import getPosts from '@/composables/getPosts';
 export default {
   components: { SinglePost },
   setup(){
-    let posts = ref([])
-    let error = ref("");
-    let load = async()=>{
-      try{
-        let response =await fetch("http://localhost:3000/posts")
-        if(response.status == 404){
-          throw new Error("Not Found Url")
-        }
-        let datas = await response.json();
-        posts.value = datas;
-      }catch(err){
-        return error.value = err.message
-      }
-    }
+    let {posts,error,load} =getPosts();
     load();
   
     return {posts,error};
