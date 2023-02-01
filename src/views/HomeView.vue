@@ -10,19 +10,21 @@
       </div>
     </div>
     <div v-else>
-      <p>Loading</p>
+      <Spinner></Spinner>
     </div>
   </div>
 </template>
 
 <script>
+import Spinner from '../components/Spinner'
 import SinglePost from './SinglePost'
 // @ is an alias to /src
 
 import { ref  } from 'vue';
 import getPosts from '@/composables/getPosts';
 export default {
-  components: { SinglePost },
+  components: {
+    Spinner, SinglePost },
   setup(){
     let {posts,error,load} =getPosts();
     load();

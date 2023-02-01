@@ -1,6 +1,10 @@
 <template>
-    <h3>{{post.title}}</h3>
-    <h3>{{cutpost}}</h3>
+    <a :href="/posts/+post.id" @click="postidcarrier">
+        <h3>{{post.title}}</h3>
+    </a>
+    
+        <h3>{{ cutpost }}</h3>
+
     
 </template>
 
@@ -13,8 +17,10 @@ export default {
         let cutpost = computed(()=>{
             return props.post.body.substring(0,20)
         })
-      
-        return {cutpost};
+        let postidcarrier = ()=>{
+            return props.post.id
+        }
+        return {cutpost,postidcarrier};
     }
 }
 </script>
