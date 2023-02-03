@@ -1,6 +1,58 @@
 {
-    "posts" : [
-        { "title" : "post title 1","body":"Loram has built a decades-long partnership with the rail industry offering the most innovative portfolio of equipment crewed by our expertly-trained operators and technicians. Our contracted services capabilities assure our customers of superior maintenance, unsurpassed productivity and maximum rail availability." , "id" : 1},
-        { "title" : "post title 2","body":"body 2" , "id" : 2}
-    ]
+  "posts": [
+    {
+      "title": "post title 1",
+      "body": "Loram has built a decades-long partnership with the rail industry offering the most innovative portfolio of equipment crewed by our expertly-trained operators and technicians. Our contracted services capabilities assure our customers of superior maintenance, unsurpassed productivity and maximum rail availability.",
+      "id": 1
+    },
+    {
+      "title": "post title 2",
+      "body": "body 2",
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "title": "gg",
+      "body": "hello",
+      "tags": [
+        "html",
+        "css",
+        "js"
+      ],
+      "id": 4
+    },
+    {
+      "title": "h",
+      "body": "h",
+      "tags": [
+        "asfasf",
+        "asfasdf"
+      ],
+      "id": 5
+    },
+    {
+      "title": "",
+      "body": "",
+      "tags": [],
+      "id": 6
+    },
+    {
+      "title": "",
+      "body": "",
+      "tags": [],
+      "id": 7
+    },
+    {
+      "title": "hello",
+      "body": "helloworld",
+      "tags": [
+        "html",
+        "cs",
+        "js"
+      ],
+      "id": 8
+    }
+  ]
 }
