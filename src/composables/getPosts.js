@@ -20,7 +20,9 @@ let getPosts = ()=>{
       //   posts.value = datas;
       
         let response = await db.collection("posts").get();
-        console.log("h")
+        posts.value = response.docs.map((doc)=>{
+          return {id:doc.id,...doc.data()}
+        })
       }catch(err){
          error.value = err.message
       }

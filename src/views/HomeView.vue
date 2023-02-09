@@ -22,6 +22,7 @@
 
 import Spinner from '../components/Spinner'
 import SinglePost from './SinglePost'
+
 // @ is an alias to /src
 
 import { ref  } from 'vue';

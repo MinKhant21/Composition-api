@@ -2,9 +2,9 @@
     <div class="post">
          {{ post.title }}
          <p>{{cutPostBody}}</p>
-         <div v-for="tag in post.tags" :key="tag" class="pill">
-           <router-link :to="{name:'Tag',params:{tag}}">{{tag}}</router-link>
-         </div>
+         <!-- <div v-for="tag in post.tags" :key="tag" class="pill"> -->
+           <!-- <router-link :to="{name:'Tag',params:{tag}}">{{tag}}</router-link> -->
+         <!--</div> -->
     </div>
  </template>
  
